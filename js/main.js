@@ -4,6 +4,8 @@ const list = document.getElementById("list");
 const input = document.getElementById("input");
 const add = document.getElementById("addBtn");
 
+const refresh = document.getElementById("refBtn");
+
 var LIS, id=0;
 
 var today = new Date();
@@ -30,3 +32,7 @@ add.addEventListener("click", function() {
       id++;
   }
 });
+
+refresh.addEventListener("click", function() {
+  list.innerHTML = "";
+})
